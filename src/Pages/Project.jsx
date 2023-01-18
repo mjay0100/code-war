@@ -6,10 +6,10 @@ import Footer from "../Components/Footer.jsx";
 const Project = () => {
   return (
     <div className="">
-      <img src={project} className="mb-12" alt="" />
+      <img src={project} className="mb-12 h-[200px] w-full" alt="" />
 
-      <div className="grid grid-cols-2 gap-8 w-5/6 mx-auto my-[7rem]">
-        <div className="flex justify-evenly bg-[#F4F0EC] items-center rounded-[5rem]">
+      <div className="grid md:grid-cols-2 gap-8 w-5/6 mx-auto my-[7rem]">
+        <div className="flex justify-evenly p-4 bg-[#F4F0EC] items-center rounded-[5rem]">
           <div className="text-[#4D5053] font-semibold capitalize">
             <p>client</p>
             <p>category</p>
@@ -47,8 +47,8 @@ const Project = () => {
 
       <div className="mx-auto w-4/5 my-8 relative">
         <img src={project2} className="w-5/6 mx-auto rounded-lg" alt="" />
-        <div className="absolute top-[50%] right-[50%] text-xl bg-white p-6 rounded-full text-[#CDA274]">
-          <BsSearch />
+        <div className="absolute top-[50%] right-[50%] text-[2rem] bg-white rounded-full text-[#CDA274]">
+          <BsSearch className="p-[9px] text-[2rem]" />
         </div>
       </div>
       <Footer className="my-[5rem]" />
