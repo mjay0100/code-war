@@ -23,12 +23,11 @@ const Home = () => {
     <div>
       {" "}
       <div className="relative">
-        <img src={image1} className="rounded-bl-[7rem] " alt="" />
-        <div className="absolute top-[25%] ml-20">
-          <h1 className="text-4xl md:text-6xl my-3">
+        <div className=" main-img rounded-bl-[7rem] p-[5rem]">
+          <h1 className="text-3xl md:text-6xl my-3 font-semibold">
             Let Your Home <br /> Be Unique
           </h1>
-          <p className=" w-1/2">
+          <p className=" md:w-1/2">
             There are many variations of the passages of lorem Ipsum
             fromavailable,variations of the passages.
           </p>
