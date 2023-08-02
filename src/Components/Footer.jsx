@@ -5,7 +5,7 @@ import { links } from "../data";
 const Footer = () => {
   return (
     <footer>
-      <div className="text-center md:text-start w-4/5 grid md:grid-cols-2 mx-auto items-center gap-1 my-8 capitalize">
+      <div className="text-center md:text-start w-[90%] grid md:grid-cols-2 mx-auto items-center gap-1 my-8 capitalize">
         <div>
           <img
             className="mx-auto md:mx-0 h-[34px] w-[34px] "
@@ -33,7 +33,7 @@ const Footer = () => {
                   <b>{title}</b>
                 </h1>
                 {sublinks.map((link) => {
-                  return <p>{link}</p>;
+                  return <h4>{link}</h4>;
                 })}
               </div>
             );
