@@ -129,7 +129,7 @@ const Home = () => {
         <h1 className="text-3xl text-semibold text-center">
           Follow Our Projects
         </h1>
-        <p className="w-1/2 mx-auto my-8 text-center ">
+        <p className="w-4/6 mx-auto my-8 text-center ">
           It is a long established fact that a reader will be distracted by the
           of readable <br /> content of page lookings at its layouts points.
         </p>
@@ -201,24 +201,24 @@ const Home = () => {
         </div>
       </section>
       {/* counter */}
-      <section className="bg-[#F4F0EC] p-[4rem] my-8 gap-4 capitalize flex justify-around  items-center text-center ">
+      <section className="bg-[#F4F0EC] p-4 my-8 gap-4 capitalize flex justify-around  items-center text-center ">
         <div>
-          <h1 className="text-3xl text-[#CDA274]">12</h1>
+          <h1 className="text-2xl text-[#CDA274]">12</h1>
           <p>years of experience</p>
         </div>
         <hr className="bg-[#CDA274] h-[4rem] w-[1px]" />
         <div>
-          <h1 className="text-3xl text-[#CDA274]">85</h1>
+          <h1 className="text-2xl text-[#CDA274]">85</h1>
           <p>success Project</p>
         </div>
         <hr className="bg-[#CDA274] h-[4rem] w-[1px]" />
         <div>
-          <h1 className="text-3xl text-[#CDA274]">15</h1>
+          <h1 className="text-2xl text-[#CDA274]">15</h1>
           <p>admin project</p>
         </div>
         <hr className="bg-[#CDA274] h-[4rem] w-[1px]" />
         <div>
-          <h1 className="text-3xl text-[#CDA274]">95</h1>
+          <h1 className="text-2xl text-[#CDA274]">95</h1>
           <p>happy customers</p>
         </div>
       </section>
@@ -259,7 +259,7 @@ const Home = () => {
       </section>
       {/* contact */}
       <section className="my-12 bg-[#292F36] p-4 text-center w-[90%] mx-auto rounded-2xl">
-        <h1 className="text-4xl text-white">Wanna join the interno?</h1>
+        <h1 className="text-3xl text-white">Wanna join the interno?</h1>
         <p className="text-white">
           It is a long established fact will be distracted.
         </p>

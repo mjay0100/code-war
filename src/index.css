@@ -41,6 +41,6 @@
 }
 
 .main-img {
-  background-image: url("http://localhost:3000/src/assets/images/main.jpg");
+  background-image: url("./assets/images/main.jpg");
   background-position: bottom;
 }

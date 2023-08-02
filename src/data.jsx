@@ -144,9 +144,7 @@ export const links = [
   {
     id: 3,
     title: "contact",
-    sublinks: [
-      "55 East Birchwood Ave. Brooklyn, New York 11201 contact@interno.com(123) 456 - 7890",
-    ],
+    sublinks: ["55 East Birchwood Ave. Brooklyn ", "New York 11201"],
   },
 ];
 

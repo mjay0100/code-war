@@ -1,4 +1,4 @@
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/images/Logo (1).png";
@@ -9,19 +9,19 @@ const Navbar = () => {
     setShow(!show);
   };
   return (
-    <header className="flex justify-around px-[2rem] my-8 items-center relative ">
+    <header className="flex justify-between px-[2rem] my-8 items-center relative ">
       <div className="flex items-baseline gap-1 ">
         <img className="h-[34px] w-[34px]" src={logo} alt="" />
         <h1 className="text-2xl font-semibold">Interno</h1>
       </div>
 
       <nav
-        className={`${show ? "show-sidebar sidebar" : "sidebar md:contents"}`}>
+        className={`${show ? "show-sidebar sidebar" : "sidebar sm:contents"}`}>
         <ul
           className={`${
             show
               ? "list-sidebar sidebar show-sidebar h-[50%] items-center text-lg capitalize"
-              : "hidden md:flex gap-6 capitalize items-center"
+              : "hidden sm:flex gap-6 capitalize items-center"
           }`}>
           {/* {show && (
                     <img className="h-[34px] w-[34px]" src={logo} alt="" />
@@ -35,22 +35,7 @@ const Navbar = () => {
               Home
             </Link>
           </li>
-          <li className="hover:text-[#0000FF] py-4 ml-4 duration-300 ease-in-out">
-            <Link
-              to="#"
-              onClick={() => setShow(false)}
-              className={`${show ? "py-4 ml-4" : ""}`}>
-              About
-            </Link>
-          </li>
-          <li className="hover:text-[#0000FF] py-4 ml-4 duration-300 ease-in-out">
-            <Link
-              to="#"
-              onClick={() => setShow(false)}
-              className={`${show ? "py-4 ml-4" : ""}`}>
-              Services
-            </Link>
-          </li>
+
           <li className="hover:text-[#0000FF] py-4 ml-4 duration-300 ease-in-out">
             <Link
               to="/project"
@@ -59,22 +44,7 @@ const Navbar = () => {
               Project
             </Link>
           </li>
-          <li className="hover:text-[#0000FF] py-4 ml-4 duration-300 ease-in-out">
-            <Link
-              to="#"
-              onClick={() => setShow(false)}
-              className={`${show ? "py-4 ml-4" : ""}`}>
-              Blog
-            </Link>
-          </li>
-          <li className="hover:text-[#0000FF] py-4 ml-4 duration-300 ease-in-out">
-            <Link
-              to="#"
-              onClick={() => setShow(false)}
-              className={`${show ? "py-4 ml-4" : ""}`}>
-              Contact
-            </Link>
-          </li>
+
           <li className="hover:text-[#0000FF] py-4 ml-4 duration-300 ease-in-out">
             <Link
               to="/professional"
@@ -85,15 +55,27 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-      <div
-        className={`${
-          show
-            ? "sm:fixed fixed right-[2rem] z-[100]  flex items-center md:hidden cursor-pointer "
-            : "relative md:hidden cursor-pointer"
-        }`}
-        onClick={handleClick}>
-        <FaBars className="text-2xl " />
-      </div>
+      {!show ? (
+        <div
+          className={`${
+            show
+              ? " right-[2rem] z-[100]  flex items-center sm:hidden cursor-pointer "
+              : "relative sm:hidden cursor-pointer"
+          }`}
+          onClick={handleClick}>
+          <FaBars className="text-2xl " />
+        </div>
+      ) : (
+        <div
+          className={`${
+            show
+              ? " right-[2rem] z-[100]  flex items-center sm:hidden cursor-pointer "
+              : "relative sm:hidden cursor-pointer"
+          }`}
+          onClick={handleClick}>
+          <FaTimes className="text-2xl " />{" "}
+        </div>
+      )}
     </header>
   );
 };
